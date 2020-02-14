@@ -1,0 +1,36 @@
+.information {
+  justify-self: stretch;
+  max-width: 60%;
+  margin-left: 5px;
+  background: #303030;
+  color: #eeeeee;
+
+  &__data {
+    display: flex;
+
+    @media ( max-width: 1100px ) {
+      flex-direction: column;
+      justify-content: stretch;
+
+      & .bird-image {
+        margin: auto;
+      }
+    }
+
+    & > div {
+      margin: 0 auto;
+    }
+
+    .bird-species {
+      margin: 5px 0;
+      padding-bottom: 3px;
+      color: #eeeeee;
+      border-bottom: 1px solid #eeeeee;
+    }
+  }
+
+  &__text {
+    padding: 0 10px;
+    color: #eeeeee;
+  }
+}

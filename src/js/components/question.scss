@@ -1,0 +1,31 @@
+.question {
+  display: flex;
+  padding: 16px;
+  background: #303030;
+
+  @media ( max-width: 650px ) {
+   flex-direction: column;
+  }
+
+  &__body {
+    flex-grow: 1;
+    padding-left: 40px;
+
+    @media ( max-width: 650px ) {
+      padding-left: 0;
+      overflow: hidden;
+
+      .rhap_container {
+        padding: 0;
+      }
+    }
+
+    @media ( max-width: 450px ) {
+      padding-left: 0;
+
+      .rhap_progress-section {
+        max-width: 65%;
+      }
+    }
+  }
+}

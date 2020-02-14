@@ -1,0 +1,131 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  max-width: 1200px;
+  margin: auto;
+
+  @media ( max-width: 1250px ) {
+    max-width: 1000px;
+  }
+
+  @media ( max-width: 1100px ) {
+    max-width: 767px;
+  }
+
+  @media ( max-width: 850px ) {
+    max-width: 600px;
+  }
+
+  @media ( max-width: 650px ) {
+    max-width: 400px;
+  }
+
+  @media ( max-width: 450px ) {
+    max-width: 280px;
+    padding: 0 10px;
+  }
+
+  .d-flex {
+    display: flex;
+  }
+
+  .d-none {
+    display: none;
+  }
+
+  .d-block {
+    display: block;
+  }
+
+  .rounded {
+    border-radius: 5px;
+  }
+
+  .bird-name {
+    margin: 15px 0;
+    padding-bottom: 3px;
+    font-size: 26px;
+    color: #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .bird-image {
+    width: 200px;
+    height: 155px;
+    margin: 0;
+    border-radius: 10px;
+  }
+
+  .answer-block {
+    display: flex;
+    justify-content: stretch;
+    margin-top: 20px;
+
+    @media (max-width: 650px) {
+      flex-direction: column;
+
+      & > ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 100%;
+        margin: 0 0 10px 0;
+      }
+
+      & > div {
+        overflow: hidden;
+        max-width: 100%;
+        margin: 0;
+
+        & .rhap_container  {
+          min-width: 300px;
+          padding: 0 !important;
+
+          @media (max-width: 450px) {
+            min-width: 200px !important;
+          }
+        }
+      }
+    }
+
+    & > ul {
+      flex-grow: 2;
+    }
+
+    & > div {
+      flex-grow: 3;
+    }
+  }
+
+  .next-level {
+
+    &__btn {
+      width: 100%;
+      margin-top: 20px;
+      padding: 5px;
+      font-size: 20px;
+      color: #eeeeee;
+      background: #303030;
+      border: none;
+      outline: none;
+    }
+
+    &__btn.active {
+      background: #00bc8c;
+    }
+  }
+
+  .victory {
+    h2 {
+      font-size: 32px;
+      color: #eeeeee;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 28px;
+      color: #eeeeee;
+      text-align: center;
+    }
+  }
+}
