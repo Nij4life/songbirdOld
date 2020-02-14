@@ -1,0 +1,44 @@
+.header {
+  margin-top: 10px;
+  color: #ffffff;
+
+  .top-panel {
+    margin-top: 15px;
+    justify-content: space-between;
+
+    .logo {
+      width: 200px;
+      height: 55px;
+      background: url('../../assets/logoBird.svg') no-repeat;
+      background-size: contain;
+    }
+
+    .score {
+      font-size: 26px;
+    }
+  }
+
+  .pagination {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+    background: #008966;
+
+    .active {
+      background: #00bc8c;
+    }
+
+    .page {
+      flex: auto;
+      justify-content: stretch;
+      padding: 0.5rem 0.75rem;
+    }
+  }
+  h1 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+  }
+}
